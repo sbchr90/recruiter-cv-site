@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Reveal } from "@/components/ui/reveal";
-import { featuredTalks } from "@/content/site-content";
+import { featuredRepoSummaries, featuredTalks } from "@/content/site-content";
 import type { RepoCard, VideoCard } from "@/lib/apis";
 
 type DynamicProofProps = {
@@ -9,6 +9,8 @@ type DynamicProofProps = {
 };
 
 export function DynamicProofSection({ repos, videos }: DynamicProofProps) {
+  const repoSummaryMap = new Map(featuredRepoSummaries.map((item) => [item.fullName, item.summary]));
+
   return (
     <section id="proof" className="section-shell scroll-mt-24">
       <Reveal>
@@ -23,7 +25,7 @@ export function DynamicProofSection({ repos, videos }: DynamicProofProps) {
                 repos.map((repo) => (
                   <a key={repo.fullName} href={repo.url} target="_blank" rel="noreferrer" className="block rounded-xl border border-slate-800 bg-card/60 p-4 transition hover:border-sky-400/40">
                     <p className="font-medium text-white">{repo.fullName}</p>
-                    <p className="mt-1 text-sm text-slate-300">{repo.description}</p>
+                    <p className="mt-1 text-sm text-slate-300">{repoSummaryMap.get(repo.fullName) ?? repo.description}</p>
                     <p className="mt-2 text-xs text-slate-400">Stars: {repo.stars} · Forks: {repo.forks}</p>
                   </a>
                 ))

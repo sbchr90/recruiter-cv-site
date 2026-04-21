@@ -25,6 +25,11 @@ export type TalkItem = {
   image?: string;
 };
 
+export type FeaturedRepoSummary = {
+  fullName: string;
+  summary: string;
+};
+
 export const profile = {
   name: "Sven Becher",
   title: "Specialist Solution Architect",
@@ -34,7 +39,7 @@ export const profile = {
     "Principal-level architecture leader for enterprise zero trust and AI security programs, with a track record in major-account transformation, executive stakeholder alignment, and faster solution delivery using coding agents.",
   ctas: {
     linkedin: "https://www.linkedin.com/in/sven-becher-564243161/",
-    email: "mailto:your.email@example.com?subject=Recruiter%20Inquiry%20-%20Principal%20Architecture%20Role"
+    email: "mailto:sven@svenbecher.com?subject=Recruiter%20Inquiry%20-%20Principal%20Architecture%20Role"
   },
   recentRecognition: "Most recent recognition: Quarterly Impact Award at Zscaler (2026), highlighted on",
   recentRecognitionUrl:
@@ -122,6 +127,14 @@ export const projects: ProjectItem[] = [
     githubRepo: "sbchr90/ZTB-Assets-Report"
   },
   {
+    title: "ZTB SNMP Poller (Python)",
+    architecture:
+      "Implemented a Python SNMP polling workflow for device telemetry collection with structured output handling for downstream monitoring and automation use cases.",
+    outcome:
+      "Improved repeatability of network signal collection and created a practical foundation for integrating SNMP insights into operational reporting flows.",
+    githubRepo: "sbchr90/ZTB-SNMP-Poller"
+  },
+  {
     title: "AI-Assisted Solution Engineering Workflow",
     architecture:
       "Agent-supported workflow for architecture drafting, demo asset creation, and security-content production using coding assistants with human validation checkpoints.",
@@ -147,7 +160,18 @@ export const skills: SkillCluster[] = [
   { area: "Delivery", items: ["Integration", "Stakeholder Alignment", "Executive Communication", "Adoption Strategy"] }
 ];
 
-export const featuredRepos: string[] = ["sbchr90/ZTB-Assets-Report"];
+export const featuredRepos: string[] = ["sbchr90/ZTB-Assets-Report", "sbchr90/ZTB-SNMP-Poller"];
+
+export const featuredRepoSummaries: FeaturedRepoSummary[] = [
+  {
+    fullName: "sbchr90/ZTB-Assets-Report",
+    summary: "Python CLI that exports Zero Trust Branch asset inventories into clean CSV/HTML reports for operational and compliance workflows."
+  },
+  {
+    fullName: "sbchr90/ZTB-SNMP-Poller",
+    summary: "Python-based SNMP poller that collects network device telemetry in a structured format for monitoring and automation use cases."
+  }
+];
 
 export const featuredVideos: { id: string; title: string }[] = [
   {
