@@ -59,11 +59,12 @@ export const experiences: ExperienceItem[] = [
     role: "Principal Product Specialist - Zero Trust Networking",
     period: "Sep 2025 - Present",
     impact: [
+      "Own zero trust networking strategy and engagement coverage across Central and Southern Europe.",
+      "Drive zero trust networking initiatives in close partnership with approximately 100 Account Executives and 50 Sales Engineers.",
       "Lead strategic zero trust networking initiatives for enterprise security and cloud transformation programs.",
       "Translate advanced architecture concepts into executive-level business value and adoption outcomes.",
       "Support major-account stakeholders with product strategy and technical leadership across complex environments.",
-      "Apply coding agents (including Claude and Cursor) in technical workflows to speed up solution iteration, content creation, and implementation guidance.",
-      "Drive AI security conversations with customers as enterprise priorities shift toward safe AI adoption."
+      "Apply coding agents in technical workflows to speed up solution iteration, content creation, and implementation guidance."
     ],
     achievements: ["Quarterly Impact Award (Mar 2026)"]
   },
@@ -72,6 +73,8 @@ export const experiences: ExperienceItem[] = [
     role: "Senior Sales Engineer - Major Accounts",
     period: "Aug 2024 - Sep 2025",
     impact: [
+      "Closed two transformational 5-year upsell & renewal deals in DAX40 companies.",
+      "Led C-level engagement with customer executives and contributed to strategic sessions in Executive Briefing Centers.",
       "Drove major-account zero trust transformation engagements and roadmap execution.",
       "Aligned security architecture designs with customer business priorities and long-term modernization goals."
     ],
@@ -82,6 +85,7 @@ export const experiences: ExperienceItem[] = [
     role: "Senior Sales Engineer",
     period: "Aug 2023 - Jul 2024",
     impact: [
+      "Closed the highest number of new-logo wins in the DACH Enterprise team.",
       "Delivered technical leadership for enterprise opportunities in network and cloud security transformation.",
       "Earned recognition for customer impact, including FY23 President's Club and EMEA SE of the Quarter."
     ],
@@ -160,7 +164,7 @@ export const skills: SkillCluster[] = [
   { area: "Delivery", items: ["Integration", "Stakeholder Alignment", "Executive Communication", "Adoption Strategy"] }
 ];
 
-export const featuredRepos: string[] = ["sbchr90/ZTB-Assets-Report", "sbchr90/ZTB-SNMP-Poller"];
+export const featuredRepos: string[] = ["sbchr90/ZTB-Assets-Report", "sbchr90/ZTB-SNMP-Poller", "sbchr90/recruiter-cv-site"];
 
 export const featuredRepoSummaries: FeaturedRepoSummary[] = [
   {
@@ -170,6 +174,10 @@ export const featuredRepoSummaries: FeaturedRepoSummary[] = [
   {
     fullName: "sbchr90/ZTB-SNMP-Poller",
     summary: "Python-based SNMP poller that collects network device telemetry in a structured format for monitoring and automation use cases."
+  },
+  {
+    fullName: "sbchr90/recruiter-cv-site",
+    summary: "this website"
   }
 ];
 
